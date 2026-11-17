@@ -1,0 +1,4 @@
+<div class="card">
+    <h3><a href="{% url 'employee_detail' employee.pk %}">{{ employee.first_name }} {{ employee.last_name }}</a></h3>
+    <p>Навыки: {{ employee.skills.all|join:', '|default:'нет' }}</p>
+</div>
